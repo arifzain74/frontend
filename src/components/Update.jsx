@@ -27,7 +27,7 @@ function Update(){
                 alert("No User Found")
                 return
             }
-            const res = await axios.put(`http://localhost:3002/api/update/${match._id}`,formData)
+            const res = await axios.put(`https://backend-6n4h.onrender.com/api/update/${match._id}`,formData)
             console.log(res);
         }
         catch(e){

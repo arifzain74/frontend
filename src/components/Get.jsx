@@ -39,7 +39,7 @@ function Get() {
             }
             
             
-            const res = await axios.get(`http://localhost:3002/api/get/${match._id}`);
+            const res = await axios.get(`https://backend-6n4h.onrender.com/api/get/${match._id}`);
             setDataList([res.data])
         } catch (e) {
             alert("Search Failed");

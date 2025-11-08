@@ -30,7 +30,7 @@ function AddUser(){
         }
         try{
             const sendData = { name, email, pass};
-            const res = await axios.post('http://localhost:3002/api/adduser',sendData)
+            const res = await axios.post('https://backend-6n4h.onrender.com/api/adduser',sendData)
             console.log(res);
             alert(res.data.msg)
         }

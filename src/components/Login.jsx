@@ -16,7 +16,7 @@ function Login(){
     const handleSubmit = async(e)=>{
         e.preventDefault()
         try{
-            const res = await axios.post('http://localhost:3002/api/login',formData)
+            const res = await axios.post('https://backend-6n4h.onrender.com/api/login',formData)
             console.log("test",res);
             // alert(res.data);
             res.status == 200? alert("logged in"):alert("log in failed")

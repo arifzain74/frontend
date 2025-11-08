@@ -29,7 +29,7 @@ function Add(){
     const handleSubmit = async(e)=>{
         e.preventDefault()
         try{
-            const res = await axios.post('http://localhost:3002/api/add',formData)
+            const res = await axios.post('https://backend-6n4h.onrender.com/api/add',formData)
             console.log(res);
             alert(res.data.msg)
         }
