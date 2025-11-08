@@ -13,7 +13,7 @@ function Get() {
     useEffect(() => {
         const fetchData = async () => {
             try {
-                const res = await axios.get("http://localhost:3002/api/get");
+                const res = await axios.get("https://backend-6n4h.onrender.com/api/get");
                 setDataList(res.data); // assuming res.data is an array of objects
             } catch (error) {
                 console.error("Error fetching data:", error);
